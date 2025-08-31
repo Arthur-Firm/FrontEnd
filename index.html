@@ -31,7 +31,7 @@ document.getElementById("login").addEventListener("submit", async (e) => {
 
     if (response.status === 200) {
       alert("✅ Login bem-sucedido!");
-    } else if (response.status === 402) {
+    } else if (response.status === 401) {
       alert("❌ Credenciais inválidas!");
     } else {
       alert("⚠️ Erro inesperado: " + response.status);
